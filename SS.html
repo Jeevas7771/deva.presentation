@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SS.css">
+    <!-- <script src="https://kit.fontawesome.com/de622727e8.js" crossorigin="anonymous"></script> -->
+    <title>SOLUTION SECTION</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <center>
+                    <li><a href="#header">SOLUTION SECTION</a></li>
+                    </center>
+                    <br>
+                    <br>
+                    <br>
+                    <p align="justify">The solution to Malaysia’s Ringgit depreciation focuses on attracting foreign investment, enhancing exports, diversifying the economy, and adjusting monetary policies. These measures aim to increase the Ringgit's demand and stabilize its value by creating a more resilient and diversified economy.</p>
+                    <br>
+                </ul>
+                
+            </nav>
+        </div>
+
+      <h2> Boosting Foreign Investment</h2>
+      <br>
+    <span>Example</span> : With the Ringgit weakening, importing goods such as machinery, electronics, and raw materials becomes more expensive. This increases production costs for businesses and raises prices for consumers.<br>
+<br>
+<br>
+<hr>
+<br>
+
+<!-- ----------------------------------------- -->
+
+<div id="header2">
+        <h2>Improving Export Competitiveness</h2>
+        <br>
+       <span>Example</span> : If Malaysia focuses on producing higher-quality palm oil and expands into new markets, foreign buyers will need Ringgit to purchase it, boosting demand for the currency.<br>
+<br>
+<br>
+<hr>
+<br>
+
+<!-- --------------------------------------------------- -->
+
+<div id="header2">
+    <h2>Diversifying the Economy</h2>
+    <br>
+   <span>Example</span> : Malaysia could invest in the tech sector, such as building a startup ecosystem. More local startups means higher demand for Ringgit from investors, which can help stabilize the currency.<br>
+<br>
+<br>
+<hr>
+<br>
+
+<!-- ------------------------------------------------------------ -->
+
+<div id="header2">
+    <h2>Monetary Policy Adjustments</h2>
+    <br>
+   <span>Example</span> : If Bank Negara Malaysia raises interest rates, foreign investors may move money into Malaysia's savings accounts to earn higher returns, which would increase demand for the Ringgit and help its value rise.<br>
+<br>
+<br>
+</div>
+</div> 
+
+<!-- ------------------------------------------PROJECT-------------------------------------------------- -->
+
+<div id="Demonstration">
+<div class="container">
+    <center>
+    <h1 class="sub-title">Demonstration</h1>
+    </center>
+    <div class="Demonstration-list">
+
+       <div>
+       
+        <h2>Problem Section</h2>
+        <p align="justify">Malaysia's Ringgit is declining in value due to factors like economic instability, global market trends, and reduced foreign investment. This depreciation increases the cost of imports and daily goods, weakening the purchasing power of Malaysians.</p>
+        <a href="PS.html">Learn More</a>
+       </div>
+
+       <div>
+       
+        <h2>Impact Section</h2>
+        <p align="justify">Malaysia's Ringgit is declining in value due to factors like economic instability, global market trends, and reduced foreign investment. This depreciation increases the cost of imports and daily goods, weakening the purchasing power of Malaysians.</p>
+        <a href="IS.html">Learn More</a>
+       </div>
+
+       <div>
+      
+        <h2>Solution Section</h2>
+        <p align="justify">To stabilize the Ringgit, Malaysia can boost domestic production, reduce reliance on imports, and increase exports. Encouraging foreign investment, diversifying the economy, and promoting technology will help strengthen the currency in the long term.</p>
+        <a href="SS.html">Learn More</a>
+       </div>
+
+       
+       <div>
+        <h2>Back To Homepage</h2>
+        <a href="index.html">Home</a>
+       </div>
+    
+
+    </div>
+</div>
+</div>
+</body>
+<!-- ----------------------------------------------CONTACT------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+    <!-- ----------------------------------------------JAVA SCRIPT-------------------------------------------------- -->
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+
+</script>
+
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+</script>
+
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKsZGxawlmx-femaUrzk0Yu5jE23IZah0LlwPUv6nRKi5GBUyDLpnari0B2jm4voBU/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppinss', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000ea;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+  
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul p{
+    color: #61b752;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#header{
+    padding: 20px ;
+}
+#header h2{
+    color: #ff004f;
+}
+
+#header h3 span{
+    color: #ff004f;
+}
+
+#header span{
+    color: #61b752;
+    font-size: 18px;
+}
+
+#header h4{
+    color: #61b752;
+}
+
+#header2 h2{
+    color: #ff004f;
+}
+
+#header2 h3 span{
+    color: #ff004f;
+}
+
+#Justify span{
+    color: #61b752;
+}
+
+#Justify h2{
+    color: #ff004f;
+}
+
+
+
+
+/* ---------------------------------ABOUT------------------------------ */
+
+
+/* ---------------------------------------PROJECTS---------------------------------------------- */
+
+#Demonstration{
+    padding: 30px 0;
+}
+
+
+.Demonstration-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.Demonstration-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.Demonstration-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.Demonstration-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.Demonstration-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.Demonstration-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/* -------------------------------CONTACT----------------------- */
+
+
+
+
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(Phone-Background.png);
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-right{
+        flex-basis: 100%;
+    }
+
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+
+}

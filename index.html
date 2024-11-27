@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de622727e8.js" crossorigin="anonymous"></script>
+    <title>PRESENTATION</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="DEVA.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Overview</a></li>
+                    <li><a href="#Demonstration">Demonstration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Devaranjani Murugan - 021203080534001</p>
+                <h1>Malaysia's Currency Decline<span> <br>Obstacle and Impact</span></h1>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------------ABOUT-------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="User.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Overview</h1>
+                    <p align="justify">Malaysia's currency, the Ringgit (MYR), has faced a significant decline in recent years, presenting serious obstacles to the nation's economy. The depreciation of the Ringgit has been driven by various factors, including global economic shifts, fluctuating oil prices (since Malaysia is a major oil exporter), and domestic political instability. For instance, in 2015, the Ringgit dropped to its lowest point in 17 years, largely due to falling oil prices and investor concerns over political issues, which undermined investor confidence.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Problem Section</p>
+                        <p class="tab-links" onclick="opentab('Education')">Impact Section</p>
+                        <p class="tab-links" onclick="opentab('Solution')">Solution Section</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>To be covered later</span><br>Malaysia's Ringgit is declining in value due to factors like economic instability, global market trends, and reduced foreign investment. This depreciation increases the cost of imports and daily goods, weakening the purchasing power of Malaysians.</li>
+                            </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>To be covered later</span><br>The Ringgit's decline causes higher inflation, raising prices for everyday goods and imported items like electronics and fuel. Businesses face higher costs and struggle with profit margins. The weakened currency also discourages foreign investment, slowing economic growth and job creation.</li>
+                            </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Solution">
+                        <ul>
+                            <li><span>To be covered later</span><br>To stabilize the Ringgit, Malaysia can boost domestic production, reduce reliance on imports, and increase exports. Encouraging foreign investment, diversifying the economy, and promoting technology will help strengthen the currency in the long term.</li>
+                            </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------PROJECT-------------------------------------------------- -->
+
+    <div id="Demonstration">
+<div class="container">
+    <h1 class="sub-title">Demonstration</h1>
+    <div class="Demonstration-list">
+
+       <div>
+        
+        <h2>Problem Section</h2>
+        <p align="justify">Malaysia's Ringgit is declining in value due to factors like economic instability, global market trends, and reduced foreign investment. This depreciation increases the cost of imports and daily goods, weakening the purchasing power of Malaysians.</p>
+        <a href="PS.html">Learn More</a>
+       </div>
+
+       <div>
+        
+        <h2>Impact Section</h2>
+        <p align="justify">Malaysia's Ringgit is declining in value due to factors like economic instability, global market trends, and reduced foreign investment. This depreciation increases the cost of imports and daily goods, weakening the purchasing power of Malaysians.</p>
+        <a href="IS.html">Learn More</a>
+       </div>
+
+       <div>
+        
+        <h2>Solution Section</h2>
+        <p align="justify">To stabilize the Ringgit, Malaysia can boost domestic production, reduce reliance on imports, and increase exports. Encouraging foreign investment, diversifying the economy, and promoting technology will help strengthen the currency in the long term.</p>
+        <a href="SS.html">Learn More</a>
+       </div>
+
+    </div>
+</div>
+</div>
+
+<!-- ----------------------------------------------CONTACT------------------------------------------------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                
+                <div class="social-icons">
+                    <a href="mailto:jeevasulogan181@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://wa.me/+60193611203"><i class="fa-brands fa-whatsapp"></i></a>
+                    <!-- <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="tel:+60193611203"><i class="fa-solid fa-square-phone"></i></a>
+                    <!-- <a href="https://www.linkedin.com/in/jeeva10/"><i class="fa-brands fa-linkedin"></i></a> -->
+
+                </div>
+
+                <!-- <a href="" download class="btn">Download CV</a> -->
+            
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+    <!-- ----------------------------------------------JAVA SCRIPT-------------------------------------------------- -->
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+
+</script>
+
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+</script>
+
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKsZGxawlmx-femaUrzk0Yu5jE23IZah0LlwPUv6nRKi5GBUyDLpnari0B2jm4voBU/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
